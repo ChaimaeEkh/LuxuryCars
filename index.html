@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luxury Car Showcase</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
     <header>
         <nav>
             <div class="logo">
@@ -33,6 +32,37 @@
             <a href="#models" class="cta-button">Explore Models</a>
         </div>
     </section>
+<section class="todays-specials">
+    <div class="specials-header">
+        <h2>TODAYS SPECIALS</h2>
+        <div class="category-nav">
+            <a href="#" class="active">SUV</a>
+            <a href="#">LUXURY</a>
+            <a href="#">SPORTCAR</a>
+            <a href="#" class="view-all">VIEW ALL CARS</a>
+        </div>
+    </div>
+    <div class="specials-grid">
+        <div class="car-card">
+            <img src="https://i.pinimg.com/736x/1a/2d/e1/1a2de137608b5ef5260825f9e0d98744.jpg" alt="Range Rover Velar">
+            <h3>Range Rover Velar</h3>
+            <div class="price">$ 800 <span>Per Day</span></div>
+            <a href="#" class="drive-btn">DRIVE NOW →</a>
+        </div>
+        <div class="car-card">
+            <img src="https://i.pinimg.com/736x/cd/ca/b2/cdcab2e4123e25b08089589a7c53753b.jpg" alt="Mercedes S Class">
+            <h3>Mercedes S Class</h3>
+            <div class="price">$ 400 <span>Per Day</span></div>
+            <a href="#" class="drive-btn">DRIVE NOW →</a>
+        </div>
+        <div class="car-card">
+            <img src="https://i.pinimg.com/736x/96/8c/84/968c840b6df52fae49cca8716dd9d8bf.jpg" alt="Toyota Highlander">
+            <h3>Toyota Highlander</h3>
+            <div class="price">$ 300 <span>Per Day</span></div>
+            <a href="#" class="drive-btn">DRIVE NOW →</a>
+        </div>
+    </div>
+</section>
     <section id="models" class="models">
         <h2 class="section-title">Our Collection</h2>
         <div class="filters">
@@ -43,14 +73,10 @@
         </div>
         <div class="car-grid" id="carList"></div>
     </section>
-
-    <!-- About Section -->
     <section id="about" class="about">
         <h2>About Us</h2>
         <p>We are a leading luxury car dealership, offering the finest selection of high-performance vehicles from around the world. Our mission is to provide an unparalleled experience for car enthusiasts.</p>
     </section>
-
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <h2>Contact Us</h2>
         <form id="contactForm">
@@ -60,17 +86,62 @@
             <button type="submit">Send Message</button>
         </form>
     </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="/api/placeholder/180/60" alt="Luxury Cars Logo" class="footer-logo">
+                    <p>Experience luxury redefined with our exclusive collection of premium vehicles. Your journey to extraordinary begins here.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#models">Our Models</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#">Car Sales</a></li>
+                        <li><a href="#">Car Financing</a></li>
+                        <li><a href="#">Trade-In</a></li>
+                        <li><a href="#">Maintenance</a></li>
+                        <li><a href="#">Custom Orders</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Luxury Avenue, CA 90210</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@luxurycars.com</p>
+                    <h3>Newsletter</h3>
+                    <form class="newsletter">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Luxury Cars. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
         </div>
-        <p>&copy; 2023 Luxury Cars. All rights reserved.</p>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="src/main.js"></script>
+    <script src="src/specialsSection.js"></script>
 </body>
 </html>
